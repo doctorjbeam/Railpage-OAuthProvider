@@ -1,6 +1,12 @@
 <?php
-	require_once("../../mainfile.php"); 
+	require_once("../../mainfile.php");
+	
+	ob_start(); 
+	
+	// Das header
 	require_once("header.php");
+	
+	spl_autoload_register("autoload_oauth");
 	
 	$oauth_client = new Oauth(API_PROVIDER_KEY, API_PROVIDER_SECRET);
 	$oauth_client->enableDebug();
@@ -16,5 +22,6 @@
 		echo "<pre>".print_r($E->debugInfo, true)."</pre>";
 	}
 	
+	ob_end_flush(); 
 	require_once("footer.php");
 ?>
