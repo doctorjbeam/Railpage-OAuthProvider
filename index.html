@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Railpage-oauthprovider : OAuth provider in PHP" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Railpage-oauthprovider</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/doctorjbeam/Railpage-OAuthProvider">View on GitHub</a>
+
+          <h1 id="project_title">Railpage-oauthprovider</h1>
+          <h2 id="project_tagline">OAuth provider in PHP</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/doctorjbeam/Railpage-OAuthProvider/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/doctorjbeam/Railpage-OAuthProvider/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Railpage-OAuthProvider</h1>
+
+<p>This project was forked from djpate/OAuthProviderExample</p>
+
+<h2>What is this project?</h2>
+
+<p>I needed some way of authenticating users against the database when not using the Railpage site - the search API and any handheld apps spring to mind as examples.</p>
+
+<h2>What does it do?</h2>
+
+<ul>
+<li>Creates token and token_secret</li>
+<li>Assigns a user ID to that token</li>
+<li>Provides a callback URL for each token</li>
+</ul><h2>Contributing</h2>
+
+<p>Anyone is free to fork this code as they see it, but be warned: it does have a lot of Railpage-specific alterations. RP devs can of course fork and use this code. </p>
+
+<h2>Changes from upstream</h2>
+
+<ul>
+<li>The User class has been renamed to OAuthUser as it was causing conflicts. </li>
+<li>Eventually this will be modified to use namespaces, as per RP's direction</li>
+<li>__autoload() functions have been replaced with spl_autoload_register(), which are defined in mainfile.php (outside the scope of this project)</li>
+<li>Database column names have been changed to suit Railpage</li>
+</ul><h3>Author</h3>
+
+<p>Authored by Michael Greenhill. Licensed under MIT License.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Railpage-oauthprovider maintained by <a href="https://github.com/doctorjbeam">doctorjbeam</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
