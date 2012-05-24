@@ -1,7 +1,7 @@
 <?php
 	require(dirname(__FILE__)."/../interfaces/IUser.php");
 	
-	class User implements IUser {
+	class OAuthUser implements IUser {
 		
 		private $id;
 		private $login;
@@ -13,7 +13,7 @@
 			$check = $pdo->query("select user_id from nuke_users where username = '".$login."'");
 			if($check->rowCount()==1){
 				$check = $check->fetch();
-				return new User($check['id']);
+				return new OAuthUser($check['id']);
 			} else {
 				return null;
 			}

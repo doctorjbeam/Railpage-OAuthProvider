@@ -49,7 +49,7 @@
 			$this->callback = $info['callback_url'];
 			$this->verifier = $info['verifier'];
 			if($info['user_id'] != 0){
-				$this->user = new User($info['user_id']);
+				$this->user = new OAuthUser($info['user_id']);
 			} else {
 				$this->user = 0;
 			}
